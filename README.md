@@ -1,64 +1,240 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+| Author                 | Date         | Version |
+| ---------------------- | ------------ | ------- |
+| Ranielle Lloyd B. Cruz | June 3, 2024 | v1.0.0  |
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Installing Laravel-Vue
 
-## About Laravel
+### pre-requites
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+-node js
+-composer
+-Vue Language(Volar) extension on visual studio code
+-php version 8.1
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## run the following commands:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+1. create a laravel project
+   command: `composer create-project laravel/laravel:^9.0 condo-ui-app`
 
-## Learning Laravel
+Note: "^9.0" stands for that version, because we'll be utilizing Laravel version 9
+and "condo-ui-app" stands for the project folder name.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+2. command: cd condo-ui-app
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+3. Install laravel-ui package
 
-## Laravel Sponsors
+command: `composer require laravel/ui`
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+4. Install the frond-end scaffolding using artisan command
 
-### Premium Partners
+command: `php artisan ui vue`
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+Note: Make sure to add .vue() to the webpack.mix file, which you can find inside your Laravel project, before moving on to step 5.
 
-## Contributing
+This is how to be happen under the file webpack.mix:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+```javascript
+const mix = require("laravel-mix");
 
-## Code of Conduct
+/*
+ |--------------------------------------------------------------------------
+ | Mix Asset Management
+ |--------------------------------------------------------------------------
+ |
+ | Mix provides a clean, fluent API for defining some Webpack build steps
+ | for your Laravel applications. By default, we are compiling the CSS
+ | file for the application as well as bundling up all the JS files.
+ |
+ */
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+mix.js("resources/js/app.js", "public/js")
+    .vue()
+    .postCss("resources/css/app.css", "public/css", [
+        //
+    ]);
+```
 
-## Security Vulnerabilities
+Note: by adding .vue() on webpack.mix is to avoid error about "ERROR in ./resources/js/components/ExampleComponent.vue 1:0
+Module parse failed: Unexpected token (1:0)" 5. Install vue3 and Compile your Fresh Scaffolding
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+command: `npm install && nmp run dev`
 
-## License
+6. Update the vue-loader
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+command: `npm update vue-loader`
+
+We need to update the vue-loader to avoid this error "[webpack-cli] Error: Cannot find module 'webpack/lib/rules/DescriptionDataMatcherRulePlugin'
+Require stack:" while running the command the npm run watch
+
+7. install vue-router
+
+command: `npm install vue-router`
+
+Note: vue-router is need for routing the intergated laravel-vue modules/webpages
+
+You can installed other dependecies your need on vue3
+
+8. Add a vue components under the resources/js/components for example Home.vue and under the Home.vue add this code
+
+9. Install Vuetify
+   command: `npm install vuetify`
+
+```vue
+<template>
+    <div>Hello World Happy Installation of Laravel9-Vue3</div>
+</template>
+
+<script>
+export default {
+    mounted() {
+        document.title = "Home";
+    },
+};
+</script>
+```
+
+9. Under the app.js on resources/js replace the code by this:
+
+```javascript
+require("./bootstrap");
+
+import { createApp } from "vue";
+import Home from "./components/Home.vue";
+import routes from "./routes.js";
+
+const app = createApp({});
+
+app.component("home", Home);
+
+app.use(routes);
+app.mount("#app");
+```
+
+10. Make a file under the resources/js with the name of routes.js and add this code:
+
+```javascript
+import { createWebHistory, createRouter } from "vue-router";
+import Home from "./components/Home.vue";
+
+const routes = [
+    {
+        path: "/",
+        name: "home",
+        component: Home,
+    },
+];
+
+const router = createRouter({
+    history: createWebHistory(),
+    routes,
+});
+
+export default router;
+```
+
+11. Next, make a blade file under the resources/views with the name of file home.blade.php and add this code:
+
+```blade
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+    <div id="app">
+        <div>
+          <home/>
+        </div>
+    </div>
+
+    <script src="{{ mix('js/app.js') }}"></script>
+</body>
+</html>
+```
+
+12. Under routes folder, replace the code Route::get of routing on web.php
+
+From this,
+
+```php
+Route::get('/', function () {
+    return view('welcome');
+});
+```
+
+to this,
+
+```php
+Route::get('/{any?}', [
+    function () {
+    return view('home');}
+])->where('any','.*');
+
+```
+
+13. on a seperate command run php artisan serve
+
+14. on a seperate command npm run watch
+
+Note: npm run watch is need to automatically compile all the changes on your Vue components and assets during development.
+
+## Cloning
+
+### Pre-Requisite
+
+-JSON-RPC
+-PHP VErsion 8.1
+
+## Installing JSON-RPC
+
+1. Install Guzzle HTTP client:
+
+`composer require guzzlehttp/guzzle`
+
+## Cloning process
+
+1. clone the project using this command:
+
+`git clone https://github.com/Reynyel/condo-ui-app.git`
+
+2. After cloning check the project file and find the .env.examples change the name of that file
+
+from .env.examples to .env
+
+3. `git checkout dev`
+
+4. `git pull`
+
+5. run the command on the root project folder this:
+
+`composer install`
+
+6. After the installation run this command
+
+`npm install`
+
+7. After installing the composer and npm, run those two command:
+
+On a seperate command run this:
+
+`php artisan serve`
+
+On the other side, run this
+
+`npm run watch`
+
+8. After running those two command, try to open the url localhost://8000
+
+note: You will get an error abaout generate key, click generate key then you will see a button refresh click refresh and automatically you can now browse the project in your local machine.
+
+## Other packages
+
+### Webfont - Material Design Icons
+
+`npm install @mdi/font`
+
+### @jamescoyle/vue-icon
+
+`npm install @jamescoyle/vue-icon`
