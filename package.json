@@ -9,6 +9,7 @@
         "prod": "npm run production",
         "production": "mix --production"
     },
+    
     "devDependencies": {
         "@popperjs/core": "^2.11.6",
         "@vitejs/plugin-vue": "^4.5.0",
