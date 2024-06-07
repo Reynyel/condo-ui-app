@@ -68,7 +68,7 @@ export default {
             </v-col>
         </div>
     </v-container>
-        <div class="services-container">
+        <div class="d-flex align-center flex-column flex-wrap mb-5">
             <h1 class="text-indigo-darken-1 text-h3 ma-2 text-title">{{ title }}</h1>
             <p class="paragraph text-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <div class="ga-6 d-flex flex-row flex-wrap my-6 w-75">
@@ -81,7 +81,8 @@ export default {
                 max-width="400"
                 theme="dark"
                 @mouseenter="zoomIn($event)"
-                @mouseleave="zoomOut($event)"> 
+                @mouseleave="zoomOut($event)"
+                > 
                 <v-card-title class="service-title">{{ service.title }}</v-card-title>
                 </v-card>
             </div>
@@ -97,31 +98,15 @@ export default {
 .text-body {
     font-family: 'Montserrat', sans-serif;
 }
-
-
-  
-  .services-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .cards-container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1600px; /* Adjust as needed */
-    width: 100%;
-    margin-top: 20px; /* Add some margin between cards and title */
-  }
-  
-  .service-card {
+    
+.service-card {
     flex: 0 0 auto;
     width: calc(25% - 20px); /* Adjust card width to fit 4 cards in a row with some spacing */
     transition: transform 0.3s ease;
+    filter: brightness(90%);
 }
 
-  .service-title {
+.service-title {
   position: absolute;
   bottom: 0;
   left: 20px;

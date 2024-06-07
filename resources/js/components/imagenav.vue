@@ -47,33 +47,37 @@ export default {
 </script>
 
 <template>
-    <v-container class="d-flex justify-center align-center px-2 mt-16 w-100">
-      <v-row class="d-flex  px-6  w-100">
-        <v-col cols="6" class="d-flex flex-column justify-center mt-16">
-          <div class="text-left pl-6" >
-            <p class="mb-2 txt-font text-grey-darken-1">Luxury Real Estate</p>
-            <p class="mb-4 txt-font text-h2 font-weight-thin text-indigo-darken-4"
-            color="#011640"
-            style="
-            text-transform: uppercase">IT'S TIME TO FIND YOUR LUXURY HOME</p>
-            <p class="txt-font text-grey-darken-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              sed do eiusmod tempor incid alor the old familer olfre idunt 
-              ut labore ellt.</p>
-          </div>
-        </v-col>
-  
-        <v-col cols="6" class="d-flex align-center  px-16 mt-16">
-          <v-carousel hide-delimiters :show-arrows="true" cycle>
-            <v-carousel-item
-              v-for="(item, i) in items"
-              :key="i"
-              :src="item.src"
-              cover
-            >
-            </v-carousel-item>
-          </v-carousel>
-        </v-col>
-      </v-row>
+    <v-container class="d-flex justify-center align-center px-2 mt-16 w-100" id="container">
+        <div class="d-flex flex-wrap">
+            <v-row class="d-flex  px-6  w-100">
+              <v-col cols="12" md="6" class="d-flex flex-column justify-center mt-16">
+                <div class="text-left pl-6" >
+                  <p class="mb-2 txt-font text-grey-darken-1">Luxury Real Estate</p>
+                  <p class="mb-4 txt-font text-h2 font-weight-thin text-indigo-darken-4"
+                  color="#011640"
+                  style="
+                  text-transform: uppercase">IT'S TIME TO FIND YOUR LUXURY HOME</p>
+                  <p class="txt-font text-grey-darken-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incid alor the old familer olfre idunt 
+                    ut labore ellt.</p>
+                </div>
+              </v-col>
+        
+              <v-col cols="12"  md="6" class="d-flex align-center  px-16 mt-16">
+                <v-carousel hide-delimiters :show-arrows="false"
+                 cycle
+                >
+                  <v-carousel-item
+                    v-for="(item, i) in items"
+                    :key="i"
+                    :src="item.src"
+                    cover
+                  >
+                  </v-carousel-item>
+                </v-carousel>
+              </v-col>
+            </v-row>
+        </div>
     </v-container>
   </template>
   

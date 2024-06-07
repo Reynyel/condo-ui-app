@@ -2,11 +2,12 @@
 export default {
   name: "Footer",
   data: () => ({}),
+  
 };
 </script>
 
 <template>
-  <v-footer class="white--text mx-0 ga-16" color="#f6f6f6" height="auto" style="padding: 70px 150px">
+  <v-footer class="white--text mx-0 ga-16" color="#f6f6f6" height="auto" style="padding: 70px 150px" id="footer">
     <v-container>
         <div class="ga-16">
             <v-row>
