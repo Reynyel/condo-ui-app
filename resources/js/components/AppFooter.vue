@@ -9,7 +9,7 @@ export default {
 <template>
   <v-footer class="white--text mx-0 ga-16" color="#f6f6f6" height="auto" style="padding: 70px 150px" id="footer">
     <v-container>
-        <div class="ga-16">
+        <div class="ga-16 d-flex flex-wrap justify-center align-center">
             <v-row>
               <v-col md="6">
                   <div class="contact-input mr-16">
@@ -35,15 +35,15 @@ export default {
               </v-col>
               <v-spacer></v-spacer>
               <v-col md="6">
-                <div class="tb2 ">
-                  <div class="contact-info ">
+                <div class="tb2 d-flex">
+                  <div class="contact-info">
                     <h3 class="text pa-2 ma-2 title">Contact Info</h3>
                     <p class="text pa-2 ma-2"><v-icon left>mdi-email</v-icon>info@ros.com</p>
                     <p class="text pa-2 ma-2"><v-icon left>mdi-phone</v-icon>+1 333 4040 5566</p>
                     <p class="text pa-2 ma-2"><v-icon left>mdi-map-marker</v-icon>647 Purok 2 Ibaba Brgy. Sinalhan, City of Santa Rosa Laguna, Philippines</p>
                   </div>
         
-                  <div class="follow-us">
+                  <div class="follow-usp">
                     <h3 class="text pa-2 ma-2 title">Follow Us</h3>
                     <v-icon size="50" class="mr-2 pa-2 ma-2">mdi-twitter</v-icon>
                     <v-icon size="50" class="mr-2 pa-2 ma-2">mdi-facebook</v-icon>
@@ -63,7 +63,7 @@ export default {
     </v-container>
   </v-footer>
 </template>
-
+  
 <style scoped>
 .text {
   color: #585858;

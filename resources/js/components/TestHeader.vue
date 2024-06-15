@@ -51,30 +51,39 @@
     <!-- Navigation drawer for smaller screens -->
     <v-navigation-drawer app v-if="smAndDown" v-model="drawer" temporary>
       <v-list dense>
-        <v-list-item>
-          <router-link to="/exclusivelistings" class="nav">
-            <v-list-item-title>Our Exclusive Listings</v-list-item-title>
-          </router-link>
-        </v-list-item>
-        <v-list-item>
-          <router-link to="/openhouses" class="nav">
-            <v-list-item-title>Open Houses</v-list-item-title>
-          </router-link>
-          
-        </v-list-item>
-        <v-list-item>
-          <router-link to="/soldlistings" class="nav">
-            <v-list-item-title>Our Sold Listings</v-list-item-title>
-          </router-link>
-        </v-list-item>
-        <v-list-item>
+        <v-menu transition="slide-y-transition" offset-y>
+            <template v-slot:activator="{ props }">
+              <v-list-item v-bind="props" class="list-title text">Our Properties</v-list-item>
+            </template>
+            <v-list class="text">
+              <v-list-item>
+                <router-link to="/exclusivelistings" class="nav">
+                  <v-list-item-title>Our Exclusive Listings</v-list-item-title>
+                </router-link>
+              </v-list-item>
+              <v-list-item>
+                <router-link to="/openhouses" class="nav">
+                  <v-list-item-title>Open Houses</v-list-item-title>
+                </router-link>
+              </v-list-item>
+              <v-list-item>
+                <router-link to="/soldlistings" class="nav">
+                  <v-list-item-title>Our Sold Listings</v-list-item-title>
+                </router-link>
+              </v-list-item>
+            </v-list>
+          </v-menu>
+        <v-divider></v-divider>
+        <v-list-item class="text">
           <router-link to="/about" class="nav">
             <v-list-item-title>About Ros</v-list-item-title>
           </router-link>
         </v-list-item>
-        <v-list-item @click="scrollToFooter">
+        <v-divider></v-divider>
+        <v-list-item @click="scrollToFooter" class="text">
           <v-list-item-title>Contact</v-list-item-title>
         </v-list-item>
+        <v-divider></v-divider>
       </v-list>
     </v-navigation-drawer>
     <!-- Mobile app bar -->
