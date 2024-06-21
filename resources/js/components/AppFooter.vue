@@ -13,7 +13,7 @@ export default {
             <v-row>
               <v-col md="6">
                   <div class="contact-input mr-16">
-                    <h3 class="text title">Contact Us</h3>
+                    <h3 class="text title text-indigo-darken-4">Contact Us</h3>
                   <v-row>
                     <v-col cols="12" md="6">
                       <v-text-field class="text-h5" label="Name" variant="underlined"></v-text-field>
@@ -28,7 +28,7 @@ export default {
                       <v-textarea label="Notes" variant="underlined" no-resize></v-textarea>
                     </v-col>
                     <v-col cols="12">
-                      <v-btn color="grey" style="font-weight: 900; font-size: 24;" size="x-large">SEND MESSAGE</v-btn>
+                      <v-btn color="indigo-darken-4" style="font-weight: 900; font-size: 24;" size="x-large">SEND MESSAGE</v-btn>
                     </v-col>
                   </v-row>
                 </div>
@@ -37,25 +37,25 @@ export default {
               <v-col md="6">
                 <div class="tb2 d-flex">
                   <div class="contact-info">
-                    <h3 class="text pa-2 ma-2 title">Contact Info</h3>
-                    <p class="text pa-2 ma-2"><v-icon left>mdi-email</v-icon>info@ros.com</p>
-                    <p class="text pa-2 ma-2"><v-icon left>mdi-phone</v-icon>+1 333 4040 5566</p>
-                    <p class="text pa-2 ma-2"><v-icon left>mdi-map-marker</v-icon>647 Purok 2 Ibaba Brgy. Sinalhan, City of Santa Rosa Laguna, Philippines</p>
+                    <h3 class="text pa-2 ma-2 title text-indigo-darken-4">Contact Info</h3>
+                    <p class="text pa-2 ma-2 text-indigo-darken-4"><v-icon left>mdi-email</v-icon> info@ros.com</p>
+                    <p class="text pa-2 ma-2 text-indigo-darken-4"><v-icon left>mdi-phone</v-icon> +1 333 4040 5566</p>
+                    <p class="text pa-2 ma-2 text-indigo-darken-4"><v-icon left>mdi-map-marker</v-icon> 647 Purok 2 Ibaba Brgy. Sinalhan, City of Santa Rosa Laguna, Philippines</p>
                   </div>
         
                   <div class="follow-usp">
-                    <h3 class="text pa-2 ma-2 title">Follow Us</h3>
-                    <v-icon size="50" class="mr-2 pa-2 ma-2">mdi-twitter</v-icon>
-                    <v-icon size="50" class="mr-2 pa-2 ma-2">mdi-facebook</v-icon>
-                    <v-icon size="50" class="mr-2 pa-2 ma-2">mdi-instagram</v-icon>
-                    <v-icon size="50" class="mr-2 pa-2 ma-2">mdi-linkedin</v-icon>
+                    <h3 class="text pa-2 ma-2 title text-indigo-darken-4">Follow Us</h3>
+                    <v-icon size="50" class="mr-2 pa-2 ma-2 text-indigo-darken-4">mdi-twitter</v-icon>                    
+                    <v-icon size="50" class="mr-2 pa-2 ma-2 text-indigo-darken-4">mdi-facebook</v-icon>
+                    <v-icon size="50" class="mr-2 pa-2 ma-2 text-indigo-darken-4">mdi-instagram</v-icon>
+                    <v-icon size="50" class="mr-2 pa-2 ma-2 text-indigo-darken-4">mdi-linkedin</v-icon>
                   </div>
                 </div>
               </v-col>
             </v-row>
             <v-row>
               <v-col md="6">
-                <div class="text">&copy; 2023 My Company. All rights reserved.</div>
+                <div class="text text-indigo-darken-4">&copy; 2023 My Company. All rights reserved.</div>
               </v-col>
             </v-row>
             
@@ -65,7 +65,10 @@ export default {
 </template>
   
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
 .text {
+  font-family: 'Montserrat', sans-serif;
   color: #585858;
   font-size: 20px;
 }
