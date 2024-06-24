@@ -1,9 +1,8 @@
 require("./bootstrap");
 
 import { createApp } from "vue";
-import App from "./layouts/App.vue";
-import routes from "./routes.js";
-
+import App from './layouts/App.vue'
+import routes from './routes.js'
 
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'

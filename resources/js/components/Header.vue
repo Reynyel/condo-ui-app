@@ -76,6 +76,7 @@ export default{
         </v-menu>
       </v-col>
       <!-- Repeat for other menu items -->
+       
       <v-col cols="auto">
         <router-link to="/about" class="nav">
           <v-btn class="text-black list-title text">About Ros</v-btn>
