@@ -106,7 +106,7 @@ export default {
                 <v-col>
                     <div class=" pa-2 ma-4 text-left" cols="12" md="6">
                         <p class="pa-0 ma-0 text-h6 font-weight-thin text-body text-grey-darken-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida tortor semper nibh vehicula, in tempor urna dignissim. Vestibulum ante ipsum.</p>
-                        <v-btn variant="text" class="pa-0 ma-0 text-h6 font-weight-thin text-body text-indigo-darken-4">
+                        <v-btn variant="text" class="pa-0 ma-0 text-h6 font-weight-thin text-body text-indigo-darken-4" href="/about">
                             <u>
                                 About Us
                             </u>

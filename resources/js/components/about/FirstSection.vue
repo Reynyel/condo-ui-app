@@ -9,9 +9,6 @@
         <p class="text-h6 font-weight-light text-body text-grey-darken-1 mx-4">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida tortor semper nibh vehicula, in tempor urna dignissim. Vestibulum ante ipsum.
         </p>
-        <v-btn variant="text" class="text-h6 font-weight-light text-body text-indigo-darken-4 mt-4">
-          <u>About Us</u>
-        </v-btn>
       </v-col>
     </v-row>
   </v-container>

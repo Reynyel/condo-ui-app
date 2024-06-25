@@ -2,7 +2,11 @@ import {createWebHistory, createRouter } from 'vue-router';
 import Home from './views/Home.vue';
 
 import About from './views/About.vue';
+import ExclusiveListings from './views/ExclusiveListings.vue';
+import OpenHouses from './views/OpenHouses.vue';
+import SoldListings from './views/SoldListings.vue';
 
+import { components } from 'vuetify/dist/vuetify-labs.js';
 
 const routes = [
 
@@ -17,6 +21,28 @@ const routes = [
     name: 'about',
     component: About
   },
+
+  {
+    path: '/exclusivelistings',
+    name: 'exclusive_listings',
+    component: ExclusiveListings
+  }
+
+  ,
+
+  {
+    path: '/openhouses',
+    name: 'open_houses',
+    component: OpenHouses
+  }
+
+  ,
+
+  {
+    path: '/soldlistings',
+    name: 'sold_listings',
+    component: SoldListings
+  }
 
 ];
 
