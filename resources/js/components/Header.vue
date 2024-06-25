@@ -41,7 +41,7 @@ export default{
 
 <template>
   <v-app-bar app class="app-bar" v-show="!smAndDown">
-    <router-link to="/" class="nav">
+    <router-link to="/home" class="nav">
       <v-toolbar-title class="toolbar-title text-black"
         style="font-size: 24px; font-weight: 900; text-transform: uppercase"
         @click="scrollToContainer">

@@ -2,7 +2,7 @@
   <div>
     <!-- App bar for larger screens -->
     <v-app-bar app fixed class="app-bar" v-if="!smAndDown">
-      <router-link to="/" class="nav">
+      <router-link to="/home" class="nav">
         <v-toolbar-title class="toolbar-title text-black"
           style="font-size: 24px; font-weight: 900; text-transform: uppercase"
           @click="scrollToContainer">
