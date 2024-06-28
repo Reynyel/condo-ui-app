@@ -29,7 +29,6 @@ TBA
 ### Sold Listings
 TBA
 
-
 ## Installing Laravel-Vue
 
 ### pre-requites

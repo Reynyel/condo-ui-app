@@ -62,28 +62,44 @@
           </router-link>
         </v-list-item>
         <v-divider></v-divider>
-        <v-menu transition="slide-y-transition" offset-y>
-            <template v-slot:activator="{ props }">
-              <v-list-item v-bind="props" class="list-title text">Our Properties</v-list-item>
+
+        
+        <v-expansion-panels>
+          <v-hover>
+            <template v-slot:default="{ isHovering, props }">
+              <v-expansion-panel >
+                <v-expansion-panel-title class="pl-2 ml-2">
+                  <template v-slot>
+                    <v-row no-gutters>
+                      <v-col class="d-flex justify-start text" cols="12">
+                        Our Properties
+                      </v-col>                                  
+                    </v-row>
+                  </template>
+                </v-expansion-panel-title>
+
+                <v-expansion-panel-text >
+                  <router-link to="/exclusivelistings" class="nav text">
+                    <v-list-item-title v-bind="props"
+                    :color="isHovering ? 'primary' : undefined">Our Exclusive Listings</v-list-item-title>
+                  </router-link>
+                </v-expansion-panel-text>
+                <v-expansion-panel-text>
+                  <router-link to="/openhouses" class="nav text">
+                    <v-list-item-title>Open Houses</v-list-item-title>
+                  </router-link>
+                </v-expansion-panel-text>
+                <v-expansion-panel-text>
+                  <router-link to="/soldlistings" class="nav text">
+                    <v-list-item-title>Our Sold Listings</v-list-item-title>
+                  </router-link>
+                </v-expansion-panel-text>
+              </v-expansion-panel>
             </template>
-            <v-list class="text">
-              <v-list-item>
-                <router-link to="/exclusivelistings" class="nav">
-                  <v-list-item-title>Our Exclusive Listings</v-list-item-title>
-                </router-link>
-              </v-list-item>
-              <v-list-item>
-                <router-link to="/openhouses" class="nav">
-                  <v-list-item-title>Open Houses</v-list-item-title>
-                </router-link>
-              </v-list-item>
-              <v-list-item>
-                <router-link to="/soldlistings" class="nav">
-                  <v-list-item-title>Our Sold Listings</v-list-item-title>
-                </router-link>
-              </v-list-item>
-            </v-list>
-          </v-menu>
+          </v-hover>
+          
+
+        </v-expansion-panels>
         <v-divider></v-divider>
         <v-list-item class="text">
           <router-link to="/about" class="nav">
@@ -111,6 +127,8 @@ import { useDisplay } from 'vuetify';
 
 export default {
   name: 'nav',
+  data: () => ({
+    }),
   setup() {
     const { smAndDown } = useDisplay();
     const drawer = ref(false);

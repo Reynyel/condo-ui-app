@@ -12,12 +12,14 @@
           >
             <div class="border-thin elevation-24 rounded-xl d-flex flex-column h-100">
               <v-card class="d-flex flex-column h-100" :class="`cursor-${cursors}`">
-                <v-img
-                  :src="service.src"
-                  cover
-                  class="flex-grow-1"
-                  
-                ></v-img>
+                <a href="./details">
+                  <v-img
+                    :src="service.src"
+                    cover
+                    class="flex-grow-1"
+                    
+                  ></v-img>
+                </a>
                 <div class="pa-4 flex-grow-0">
                   <p class="text-title text-indigo-lighten-1 text-h5">{{ service.price }}</p>
                   <p class="text-title text-grey-darken-2 text-h6">{{ service.acre }} Acres</p>

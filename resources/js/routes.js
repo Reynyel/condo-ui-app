@@ -5,6 +5,7 @@ import About from './views/About.vue';
 import ExclusiveListings from './views/ExclusiveListings.vue';
 import OpenHouses from './views/OpenHouses.vue';
 import SoldListings from './views/SoldListings.vue';
+import Details from './views/Details.vue';
 
 import { components } from 'vuetify/dist/vuetify-labs.js';
 
@@ -42,6 +43,12 @@ const routes = [
     path: '/soldlistings',
     name: 'sold_listings',
     component: SoldListings
+  },
+
+  {
+    path: '/details',
+    name: 'details',
+    component: Details
   }
 
 ];

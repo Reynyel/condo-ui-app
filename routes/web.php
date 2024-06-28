@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\DB;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,12 +14,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+// Route to display all houses from the 'listing' table as JSON
+Route::get('/listings', function () {
+    // Retrieve all records from the 'listing' table using DB facade
+    $houses = DB::table('listing')->get();
 
-Route::get('/{any?}', [
-    function () {
-        return view('home');
-    }
-])->where('any', '.*');
+    // Return the fetched data as JSON response
+    return response()->json($houses);
+});
+
+// Catch-all route to display the 'home' view for any URL path
+Route::get('/{any?}', function () {
+    return view('home');
+})->where('any', '.*');
