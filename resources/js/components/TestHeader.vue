@@ -64,7 +64,7 @@
         <v-divider></v-divider>
 
         
-        <v-expansion-panels>
+        <v-expansion-panels flat>
           <v-hover>
             <template v-slot:default="{ isHovering, props }">
               <v-expansion-panel >
