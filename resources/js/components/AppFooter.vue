@@ -7,8 +7,8 @@ export default {
 </script>
 
 <template>
-  <v-footer class="white--text mx-0 ga-16" color="#f6f6f6" height="auto" style="padding: 70px 150px" id="footer" fluid>
-    <v-container>
+  <v-footer class="white--text mx-0 ga-16" color="#f6f6f6" height="auto" style="padding: 70px 150px" id="footer">
+    <v-container class="d-flex flex-wrap align-center justify-center mt-2 pt-2 h-vh-100" fluid>
         <div class="ga-16 d-flex flex-wrap justify-center align-center" fluid>
             <v-row>
               <v-col md="6">
@@ -55,7 +55,7 @@ export default {
             </v-row>
             <v-row>
               <v-col md="6">
-                <div class="text text-indigo-darken-4">&copy; 2023 My Company. All rights reserved.</div>
+                <div class="text text-indigo-darken-4 d-flex align-left">&copy; 2024 Cruz. All rights reserved.</div>
               </v-col>
             </v-row>
             
