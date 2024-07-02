@@ -28,7 +28,7 @@ This project is a basic frontend for a condominium rental website made with VueJ
 
 ### Open Houses
 ![alt text](image-12.png)
-![alt text](image-13.png)
+![alt text](image-18.png)
 ![alt text](image-14.png)
 
 ### Sold Listings
