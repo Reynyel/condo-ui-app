@@ -290,7 +290,7 @@
                                 <v-list-item-content class="text-left">Address</v-list-item-content>
                               </v-col>
                               <v-col>
-                                <v-list-item-content class="text-right text-indigo-lighten-1 d-flex flex-row-reverse">$ {{ listing.address }}</v-list-item-content>
+                                <v-list-item-content class="text-right text-indigo-lighten-1 d-flex flex-row-reverse">{{ listing.address }}</v-list-item-content>
                               </v-col>
                             </v-row>  
                           </v-list-item>
