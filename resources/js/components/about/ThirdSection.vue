@@ -24,7 +24,7 @@ export default {
       },
       { 
         src: 'images/woman2.png',
-        name: 'Eloisa Doe',
+        name: 'Elysa Doe',
         title: 'Marketing'
       }
     ]
