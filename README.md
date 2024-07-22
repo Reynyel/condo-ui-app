@@ -6,30 +6,30 @@
 This project is a basic frontend for a condominium rental website made with VueJS, Laravel, and Bootstrap. It is currently a work-in-progress project. It provides a user-friendly interface for potential tenants to explore available rental units, view property details, and contact the rental management team.
 
 ### Homepage
-![alt text](image.png)
-![alt text](image-1.png)
-![alt text](image-2.png)
-![alt text](image-3.png)
-![alt text](image-4.png)
-![alt text](image-5.png)
+![alt text](images/readme/image.png)
+![alt text](images/readme/image-1.png)
+![alt text](images/readme/image-2.png)
+![alt text](images/readme/image-3.png)
+![alt text](images/readme/image-4.png)
+![alt text](images/readme/image-5.png)
 
 ### Exclusive Listings
-![alt text](image-6.png)
-![alt text](image-7.png)
-![alt text](image-8.png)
-![alt text](image-15.png)
-![alt text](image-16.png)
-![alt text](image-17.png)
+![alt text](images/readme/image-6.png)
+![alt text](images/readme/image-7.png)
+![alt text](images/readme/image-8.png)
+![alt text](images/readme/image-15.png)
+![alt text](images/readme/image-16.png)
+![alt text](images/readme/image-17.png)
 
 ### About
-![alt text](image-9.png)
-![alt text](image-10.png)
-![alt text](image-11.png)
+![alt text](images/readme/image-9.png)
+![alt text](images/readme/image-10.png)
+![alt text](images/readme/image-11.png)
 
 ### Open Houses
-![alt text](image-12.png)
-![alt text](image-18.png)
-![alt text](image-14.png)
+![alt text](images/readme/image-12.png)
+![alt text](images/readme/image-18.png)
+![alt text](images/readme/image-14.png)
 
 ### Sold Listings
 TBA

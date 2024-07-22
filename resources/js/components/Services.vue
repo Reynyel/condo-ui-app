@@ -10,31 +10,31 @@ export default {
       title: 'Featured Communities',
       services: [
         { 
-            src: ('https://images.unsplash.com/photo-1656038339605-f48e55b367d5?q=80&w=2044&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'),
+            src: ('images/projects/3fa1d38c-9f04-4ffd-b23e-d010f569887e.jpeg'),
             title: 'Community 1'
          },
         { 
-            src: ('https://images.unsplash.com/photo-1656038339732-89cfc55bc6b7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'),
+            src: ('images/projects/b8516da8-ff6a-4891-9c2d-ecaa1f22b25e.jpeg'),
             title: 'Community 2' 
         },
         { 
-            src: ('https://images.unsplash.com/photo-1656038338350-6937f2b5e18b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'),
+            src: ('images/projects/e62ad29e-05a9-4ada-9b99-c18f46e6fc85.jpeg'),
             title: 'Community 3' 
         },
         { 
-            src: ('https://images.unsplash.com/photo-1580785692949-7b5b7fd83d25?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'),
+            src: ('images/projects/280d3f1d-49fc-40d2-9f6b-cd6983138289.jpeg'),
             title: 'Community 4' 
 
         }
         ,
         { 
-            src: ('https://images.unsplash.com/photo-1621781753671-27ff5af295e7?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'),
+            src: ('images/projects/fb8eaca9-93d5-4733-9b2e-18c795c0832d.jpeg'),
             title: 'Community 5' 
 
         }
         ,
         { 
-            src: ('https://images.unsplash.com/photo-1597859006360-3c7de7f5f1d3?q=80&w=2037&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'),
+            src: ('images/projects/891e62db-50c1-4721-995e-5f2bcc728756.jpeg'),
             title: 'Community 6' 
 
         }
