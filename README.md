@@ -6,9 +6,8 @@
 This project is a basic frontend for a condominium rental website made with VueJS, Laravel, and Bootstrap. It is currently a work-in-progress project. It provides a user-friendly interface for potential tenants to explore available rental units, view property details, and contact the rental management team.
 
 ### Homepage
+![alt text](public/images/readme/image.png)
 ![alt text](public/images/readme/image-1.png)
-![alt text](public/images/readme/image-1.png)
-![alt text](public/images/readme/image-2.png)
 ![alt text](public/images/readme/image-3.png)
 ![alt text](public/images/readme/image-4.png)
 ![alt text](public/images/readme/image-5.png)
@@ -20,6 +19,7 @@ This project is a basic frontend for a condominium rental website made with VueJ
 ![alt text](public/images/readme/image-15.png)
 ![alt text](public/images/readme/image-16.png)
 ![alt text](public/images/readme/image-17.png)
+![alt text](public/images/readme/image_maps.png)
 
 ### About
 ![alt text](public/images/readme/image-9.png)
