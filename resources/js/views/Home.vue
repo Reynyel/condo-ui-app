@@ -6,6 +6,7 @@ import Services from '../components/Services.vue';
 import TestHeaderVue from '../components/TestHeader.vue';
 import Features from '../components/Features.vue';
 import Testimonals from '../components/Testimonals.vue';
+import MoreInformationVue from '../components/MoreInformation.vue';
 
 export default {
   name:"Home",
@@ -17,6 +18,7 @@ export default {
     Features,
     Testimonals,
     AppFooterVue,
+    MoreInformationVue,
   },
   data: () => ({}),
   mounted() {
@@ -34,6 +36,8 @@ export default {
    <Services></Services>
    <Features></Features>
    <Testimonals></Testimonals>
+   <v-divider></v-divider>
+   <MoreInformationVue></MoreInformationVue>
   </v-content>
   <AppFooterVue></AppFooterVue>
 </template>
