@@ -64,8 +64,8 @@
         section:[
             {
                 image: '/images/properties/condo1.png',
-                title: 'An Award Winning Seaside Estate',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                title: 'GLAM RESIDENCES',
+                description: 'Make an investment today for your future Airbnb rental business',
                 videos: [
                     '/videos/5b6da8e9-a53c-4a87-abdb-5af3004f8e54.mp4',
                     
@@ -73,36 +73,52 @@
             },
             {
                 image: '/images/properties/condo2.png',
-                title: 'Another Beautiful Property',
-                description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+                title: 'S RESIDENCES',
+                description: 'Make an investment today for your future Airbnb rental business.',
                 videos: [
-                    '/videos/5b6da8e9-a53c-4a87-abdb-5af3004f8e54.mp4'
+                    '/videos/5d14f1c3-e358-4d25-a50d-4d5b3427a98f.mp4'
                 ]
             }, 
             {
                 image: '/images/properties/condo2.png',
-                title: 'Another Beautiful Property',
-                description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+                title: 'BLOOM RESIDENCES',
+                description: 'Make an investment today for your future Airbnb rental business.',
                 videos: [
-                    '/videos/5b6da8e9-a53c-4a87-abdb-5af3004f8e54.mp4'
+                    '/videos/5ee39707-1439-4bcf-85de-6e0da83e99a7.mp4'
                 ]
             }, 
             {
                 image: '/images/properties/condo2.png',
-                title: 'Another Beautiful Property',
-                description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+                title: 'SPRING RESIDENCES',
+                description: 'Make an investment today for your future Airbnb rental business.',
                 videos: [
-                    '/videos/5b6da8e9-a53c-4a87-abdb-5af3004f8e54.mp4'
+                    '/videos/6ba863e5-d2b6-48d4-9f73-fae40a296ce7.mp4'
                 ]
             }, 
             {
                 image: '/images/properties/condo2.png',
-                title: 'Another Beautiful Property',
+                title: 'HILL RESIDENCES',
+                description: 'Make an investment today for your future Airbnb rental business.',
+                videos: [
+                    '/videos/29bd4711-6834-475d-bf50-8c52403fb195.mp4'
+                ]
+            },
+            {
+                image: '/images/properties/condo2.png',
+                title: 'SOUTH 2 RESIDENCES',
+                description: 'Make an investment today for your future Airbnb rental business.',
+                videos: [
+                    '/videos/34bcbed0-eeca-41a7-8681-dcace1d7b96d.mp4'
+                ]
+            },
+            {
+                image: '/images/properties/condo2.png',
+                title: 'TWIN Property',
                 description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
                 videos: [
-                    '/videos/5b6da8e9-a53c-4a87-abdb-5af3004f8e54.mp4'
+                    '/videos/324da521-935a-4e77-9ea3-824e94c57abe.mp4'
                 ]
-            },      
+            },                  
         ],
         videoLink: ['/videos/5b6da8e9-a53c-4a87-abdb-5af3004f8e54.mp4',
             '/videos/5b6da8e9-a53c-4a87-abdb-5af3004f8e54.mp4',

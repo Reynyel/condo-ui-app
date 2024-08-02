@@ -38,9 +38,9 @@ export default {
                 <div class="tb2 d-flex">
                   <div class="contact-info">
                     <h3 class="text pa-2 ma-2 title text-indigo-darken-4">Contact Info</h3>
-                    <p class="text pa-2 ma-2 text-indigo-darken-4"><v-icon left>mdi-email</v-icon> info@ros.com</p>
-                    <p class="text pa-2 ma-2 text-indigo-darken-4"><v-icon left>mdi-phone</v-icon> +1 333 4040 5566</p>
-                    <p class="text pa-2 ma-2 text-indigo-darken-4"><v-icon left>mdi-map-marker</v-icon> 647 Purok 2 Ibaba Brgy. Sinalhan, City of Santa Rosa Laguna, Philippines</p>
+                    <p class="text pa-2 ma-2 text-indigo-darken-4"><v-icon left>mdi-email</v-icon> rosflorinda.smdc@gmail.com</p>
+                    <p class="text pa-2 ma-2 text-indigo-darken-4"><v-icon left>mdi-phone</v-icon> +63 969086607</p>
+                    <p class="text pa-2 ma-2 text-indigo-darken-4"><v-icon left>mdi-map-marker</v-icon> 14th floor Two Ecom Bldg. Harbour Drive, Moa Complex, Pasay City, Philippines</p>
                   </div>
         
                   <div class="follow-usp">
