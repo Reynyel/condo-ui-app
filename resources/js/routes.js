@@ -12,7 +12,7 @@ import { components } from 'vuetify/dist/vuetify-labs.js';
 const routes = [
 
   {
-    path: '/home',
+    path: '/',
     name: 'home',
     component: Home
   },
